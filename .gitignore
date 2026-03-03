@@ -1,0 +1,15 @@
+build/  
+build.sh/  
+install/  
+log/  
+send_goal.py/  
+src/
+
+*.pyc
+*.o
+*.so
+*.log
+*.swp
+
+.vscode/
+.idea/
