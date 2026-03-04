@@ -53,3 +53,7 @@ CATKIN_IGNORE
 # VS Code browsing DB
 .vscode/browse.vc.db
 .vscode/*.db
+
+# VS Code
+.vscode/browse.vc.db
+.vscode/*.db
