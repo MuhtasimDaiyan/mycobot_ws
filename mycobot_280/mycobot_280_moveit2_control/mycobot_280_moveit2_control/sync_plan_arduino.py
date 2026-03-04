@@ -29,7 +29,7 @@ class Slider_Subscriber(Node):
         )
         self.subscription
         
-        self.robot_m5 = os.popen("ls /dev/ttyUSB*").readline()[:-1]
+        self.robot_m5 = os.popen("ls /dev/ttyACM*").readline()[:-1]
         self.robot_wio = os.popen("ls /dev/ttyACM*").readline()[:-1]
         if self.robot_m5:
             port = self.robot_m5

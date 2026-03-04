@@ -39,7 +39,7 @@ def generate_launch_description():
     
     serial_port_arg = DeclareLaunchArgument(
         'port',
-        default_value='/dev/ttyUSB0',
+        default_value='/dev/ttyACM0',
         description='Serial port to use'
     )
     res.append(serial_port_arg)

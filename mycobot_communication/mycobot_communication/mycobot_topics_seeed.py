@@ -77,7 +77,7 @@ class MycobotTopics(object):
     def __init__(self):
         super().__init__("mycobot_topics")
         # 定义数据
-        self.declare_parameter('port', '/dev/ttyUSB0')
+        self.declare_parameter('port', '/dev/ttyACM0')
         self.declare_parameter('baud', '115200')
         self.get_logger().info("start ...")
 

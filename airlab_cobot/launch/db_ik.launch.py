@@ -17,7 +17,7 @@ def generate_launch_description():
         "model",
         default_value=os.path.join(
             get_package_share_directory("mycobot_description"),
-            "urdf/mycobot_280_m5/mycobot_280_m5_with_pump.urdf"
+            "urdf/mycobot_280_m5/mycobot_280_m5.urdf"
         )
     )
     res.append(model_launch_arg)
@@ -67,9 +67,6 @@ def generate_launch_description():
     #     condition=IfCondition(LaunchConfiguration('gui'))
     # )
     # res.append(joint_state_publisher_gui_node)
-
-    # Robot description (xacro)
-   
 
     rviz_node = Node(
         name="rviz2",

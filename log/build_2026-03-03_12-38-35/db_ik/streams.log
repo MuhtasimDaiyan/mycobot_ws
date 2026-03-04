@@ -1,0 +1,38 @@
+[0.983s] Invoking command in '/home/airlab/mycobot_ws/src/db_ik': PYTHONPATH=/home/airlab/mycobot_ws/src/build/db_ik/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/airlab/mycobot_ws/src/install/db_ik/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/db_ik build --build-base /home/airlab/mycobot_ws/src/build/db_ik/build install --record /home/airlab/mycobot_ws/src/build/db_ik/install.log --single-version-externally-managed install_data
+[1.313s] running egg_info
+[1.313s] creating ../build/db_ik/db_ik.egg-info
+[1.339s] writing ../build/db_ik/db_ik.egg-info/PKG-INFO
+[1.339s] writing dependency_links to ../build/db_ik/db_ik.egg-info/dependency_links.txt
+[1.339s] writing entry points to ../build/db_ik/db_ik.egg-info/entry_points.txt
+[1.340s] writing requirements to ../build/db_ik/db_ik.egg-info/requires.txt
+[1.340s] writing top-level names to ../build/db_ik/db_ik.egg-info/top_level.txt
+[1.340s] writing manifest file '../build/db_ik/db_ik.egg-info/SOURCES.txt'
+[1.391s] reading manifest file '../build/db_ik/db_ik.egg-info/SOURCES.txt'
+[1.392s] adding license file 'LICENSE'
+[1.392s] writing manifest file '../build/db_ik/db_ik.egg-info/SOURCES.txt'
+[1.392s] running build
+[1.392s] running build_py
+[1.393s] creating /home/airlab/mycobot_ws/src/build/db_ik/build
+[1.393s] creating /home/airlab/mycobot_ws/src/build/db_ik/build/lib
+[1.393s] creating /home/airlab/mycobot_ws/src/build/db_ik/build/lib/db_ik
+[1.393s] copying db_ik/__init__.py -> /home/airlab/mycobot_ws/src/build/db_ik/build/lib/db_ik
+[1.393s] copying db_ik/mycobot_node.py -> /home/airlab/mycobot_ws/src/build/db_ik/build/lib/db_ik
+[1.393s] running install
+[1.400s] running install_lib
+[1.427s] creating /home/airlab/mycobot_ws/src/install/db_ik/lib/python3.12/site-packages/db_ik
+[1.427s] copying /home/airlab/mycobot_ws/src/build/db_ik/build/lib/db_ik/__init__.py -> /home/airlab/mycobot_ws/src/install/db_ik/lib/python3.12/site-packages/db_ik
+[1.427s] copying /home/airlab/mycobot_ws/src/build/db_ik/build/lib/db_ik/mycobot_node.py -> /home/airlab/mycobot_ws/src/install/db_ik/lib/python3.12/site-packages/db_ik
+[1.428s] byte-compiling /home/airlab/mycobot_ws/src/install/db_ik/lib/python3.12/site-packages/db_ik/__init__.py to __init__.cpython-312.pyc
+[1.428s] byte-compiling /home/airlab/mycobot_ws/src/install/db_ik/lib/python3.12/site-packages/db_ik/mycobot_node.py to mycobot_node.cpython-312.pyc
+[1.429s] running install_data
+[1.429s] creating /home/airlab/mycobot_ws/src/install/db_ik/share/ament_index
+[1.429s] creating /home/airlab/mycobot_ws/src/install/db_ik/share/ament_index/resource_index
+[1.429s] creating /home/airlab/mycobot_ws/src/install/db_ik/share/ament_index/resource_index/packages
+[1.429s] copying resource/db_ik -> /home/airlab/mycobot_ws/src/install/db_ik/share/ament_index/resource_index/packages
+[1.429s] copying package.xml -> /home/airlab/mycobot_ws/src/install/db_ik/share/db_ik
+[1.429s] running install_egg_info
+[1.457s] Copying ../build/db_ik/db_ik.egg-info to /home/airlab/mycobot_ws/src/install/db_ik/lib/python3.12/site-packages/db_ik-0.0.0-py3.12.egg-info
+[1.458s] running install_scripts
+[1.626s] Installing mycobot_node script to /home/airlab/mycobot_ws/src/install/db_ik/lib/db_ik
+[1.627s] writing list of installed files to '/home/airlab/mycobot_ws/src/build/db_ik/install.log'
+[1.658s] Invoked command in '/home/airlab/mycobot_ws/src/db_ik' returned '0': PYTHONPATH=/home/airlab/mycobot_ws/src/build/db_ik/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/airlab/mycobot_ws/src/install/db_ik/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/db_ik build --build-base /home/airlab/mycobot_ws/src/build/db_ik/build install --record /home/airlab/mycobot_ws/src/build/db_ik/install.log --single-version-externally-managed install_data

@@ -33,13 +33,13 @@ def generate_launch_description():
 
     gui_launch_arg = DeclareLaunchArgument(
         "gui",
-        default_value="true"
+        default_value="false"
     )
     res.append(gui_launch_arg)
     
     serial_port_arg = DeclareLaunchArgument(
         'port',
-        default_value='/dev/ttyUSB0',
+        default_value='/dev/ttyACM0',
         description='Serial port to use'
     )
     res.append(serial_port_arg)
@@ -75,7 +75,7 @@ def generate_launch_description():
         output="screen",
         arguments=['-d', LaunchConfiguration("rvizconfig")],
     )
-    res.append(rviz_node)
+    # res.append(rviz_node)
     
     slider_control_node = Node(
         package="mycobot_280",
