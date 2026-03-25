@@ -25,7 +25,7 @@ from geometry_msgs.msg import PoseStamped
 import sys
 
 class GoalPublisher(Node):
-    def __init__(self, x, y):
+    def __init__(self, x, y, z):
         super().__init__('minimal_goal_pub')
         self.publisher_ = self.create_publisher(PoseStamped, '/goal_pose', 10)
         
@@ -33,12 +33,15 @@ class GoalPublisher(Node):
         self.get_logger().info('Waiting for subscribers...')
         while self.publisher_.get_subscription_count() == 0:
             rclpy.spin_once(self, timeout_sec=0.1)
+            print('.', end='', flush=True)
+            print('\nSubscriber detected, publishing goal...')
 
         msg = PoseStamped()
         msg.header.frame_id = 'map'
         msg.header.stamp = self.get_clock().now().to_msg()
         msg.pose.position.x = x
         msg.pose.position.y = y
+        msg.pose.position.z = z
         msg.pose.orientation.w = 1.0
 
         self.publisher_.publish(msg)
@@ -49,7 +52,7 @@ def main():
         return
     
     rclpy.init()
-    node = GoalPublisher(float(sys.argv[1]), float(sys.argv[2]))
+    node = GoalPublisher(float(sys.argv[1]), float(sys.argv[2]), float(sys.argv[3]))
     # Brief sleep to ensure the message clears the buffer before shutdown
     import time
     time.sleep(0.5) 
